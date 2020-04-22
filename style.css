@@ -1,22 +1,51 @@
 body{
 font-family: 'Roboto', sans-serif;
-
+overflow-x: hidden;
+ 
+  background-repeat: repeat-x;
+  background-size: cover;
 }
 *{
 	margin: 0;
 	padding: 0;
   box-sizing: border-box;
 }
+html {
+    height: 100%;
+    margin-bottom: 0.01em;
+}
 .container{
   width: 100%;
-  height: 80px;
-  background-color: black;
+  height: 110px;
+
+ flex-direction: row;
+  justify-content: space-around;
+  
+  flex-flow: wrap;
+
   margin-top: 0;
 
 }
+
+.text{
+  width: auto;
+  height: auto;
+  box-shadow: 0 1px 50px grey;
+  border-radius: 20px;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+    padding-top: 2%;
+   padding-left: 2%;
+   padding-right: 2%;
+   padding-bottom: 5%;
+}
+
+
+
 .header1{
-  width: 25%;
-  height: 80px;
+  width: 15%;
+  height: 110px;
   background-color: lightgrey;
   float: left;
  text-align: center;
@@ -25,20 +54,24 @@ font-family: 'Roboto', sans-serif;
 
 }
 .header2{
-  width: 25%;
-  height:80px;
+  width: 40%;
+  height: 110px;
   background-color: lightgrey;
   float: left;
   text-align: center;
   vertical-align: middle;
-  padding-top: 10px;
+  padding-top: 20px;
   }
 .rubrik{
   color:#E80C94;
+  width: auto;
+  padding-left: 5px;
+  
+  padding-bottom: 5px;
 }
 .header3{
-  width: 25%;
-  height: 80px;
+  width: 15%;
+  height: 110px;
   background-color: lightgrey;
   float: left;
   text-align: center;
@@ -46,12 +79,12 @@ font-family: 'Roboto', sans-serif;
  
 }
 .header4{
-  width: 25%;
-  height: 80px;
+  width: 30%;
+  height: 110px;
   background-color: lightgrey;
   float: left;
   text-align: center;
-  padding-left: 0%;
+  padding-left: 15px;
   padding-top: 14px;
 }
 /* Navbar container */
@@ -94,7 +127,7 @@ font-family: 'Roboto', sans-serif;
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: lightgrey;
-  color: indianred;
+  color: #E80C94;
 }
 
 /* Dropdown content (hidden by default) */
@@ -130,15 +163,31 @@ font-family: 'Roboto', sans-serif;
 }
 
 .bildgalleri{
-  width: 100%;
+  width: auto;
   height: auto;
-  padding-left: 10%;
-  padding-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 8%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
   flex-flow: wrap;
+  
+}
+.bildgalleri1{
+  width: auto;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  color: white;
+}
+.bildgalleri2{
+  text-align: center;
 }
 
 .box{
@@ -153,14 +202,146 @@ font-family: 'Roboto', sans-serif;
 }
 .loggor{
   width: auto;
-  height: 74px;
-  padding-top: 10px;
+  height: 80px;
+  padding-top: 15px;
 }
 .loggor1{
   width: auto;
-  height: 74px;
-  padding-top: 10px;
+  height: 80px;
+  padding-top: 15px;
+  padding-right: 1px;
 }
+
 .quiz{
+  width: auto;
+  height: auto;
+  margin-top: 25%; 
+  margin-left: 5%;
+  margin-right: 5%;
   
+ 
+
+ 
+}
+.rubrik2{
+text-align: center;
+padding-top: 0.5%;
+}
+.quizet{
+  padding-left: 2%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+#after_submit{
+  visibility: hidden;
+}
+.btn-primary{
+  background-color: green;
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+
+.leftside{
+  height: auto;
+  width: auto;
+ 
+ padding-right: 5px;
+   margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20%;
+
+}
+.utvärdering2{
+  height: auto;
+  width: auto;
+ 
+
+}
+.rightside{
+  height: auto;
+  width: auto;
+ padding-right: 5px;
+  
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+ 
+
+}
+.utvärdering1{
+  
+  padding-left: 10%;
+  padding-right: 90%;
+  padding-bottom: 1%;
+}
+.comments{
+  width: auto;
+  background-color: pink;
+  padding-right: 0px;
+  height: auto;
+  padding-left: 5%;
+
+}
+.comments1{
+  width: auto;
+  background-color: lightgrey;
+  padding-right: 0px;
+  height: auto;
+  padding-left: 5%;
+
+}
+.klass{
+  margin-left: 40%;
+  margin-right: 10%;
+  margin-top: 5%;
+  width: 90px;
+  height: 40px;
+
+
+}
+.link{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.nasta{
+  width: auto;
+  height: auto;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+
+
+
+
+
+.btn-primary{
+  width: 60px;
+  height: 50px;
+  margin-left: 40%;
+  margin-top: 3%;
+  border-radius: 10px;
+
+}
+.info{
+  margin-top: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: auto;
+  height: auto;
 }
