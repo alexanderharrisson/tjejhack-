@@ -29,7 +29,7 @@ if (fråga3 == "text") {
 
  console.log(correct);
  document.getElementById("after_submit").style.visibility = "visible";
- document.getElementById("number_correct").innerHTML="Du fick" +' '+correct +"/3 av möjliga";
+ document.getElementById("number_correct").innerHTML="Du fick" +' '+correct +"/3 av möjliga rätt";
  
 
 

@@ -2,6 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
 	<title>Tjejhack</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
@@ -44,10 +47,8 @@
 										<a href="#tjejhack">Hem</a>
 										<a href="#quiz">Quiz</a>
 										<a href="#utvärdering">Utvärdering</a>
-										<a href="#kalender">Kalender</a>
-										<a href="#">Information</a>
-										<a href="#">Lär dig mer</a>
-										<a href="#">Besök</a>
+										<a href="#info">Information</a>
+										<a href="#besok">Besök</a>
 									</div>
 								</div>
 							</div>
@@ -60,8 +61,8 @@
 </header>
 <main>
 <section>
- <div class="text">
- 	<p>Tjejhack Ronneby genomfördes första gången våren 2018 för alla tjejer som går årskurs sju på skolorna i Ronneby kommun. Det är elever som går Teknikprogrammet på Gymnasieskolan Knut Hahn som arrangerar tjejhacket. Syftet är att tjejer i lugn och ro ska få prova på att programmera. Planen är att tjejhack ska bli något vi genomför varje år.
+ <div class="textinfo">
+ 	<p class="textinfo1">Tjejhack Ronneby genomfördes första gången våren 2018 för alla tjejer som går årskurs sju på skolorna i Ronneby kommun. Det är elever som går Teknikprogrammet på Gymnasieskolan Knut Hahn som arrangerar tjejhacket. Syftet är att tjejer i lugn och ro ska få prova på att programmera. Planen är att tjejhack ska bli något vi genomför varje år.
 </p>
  </div>
 </section>
@@ -126,9 +127,9 @@
 
 			<form name="quiz">
 
-
-				<p class="fraga1">Programspråket Python har fått sitt namn från
-				?</p>
+                 <div class="fraga1">
+				<p>Programspråket Python har fått sitt namn från
+				?</p></div>
 
 
 				<input id="mc" type="radio" name="fråga1" value="ormen">Ormen<br> <!--Här är frågor till quizet. Det funkar så här typ att man skriver rätt value i javascript filen och om man gissar rött value så får man poäng-->
@@ -162,12 +163,12 @@
 				<br>
 				<button id="button" type="button" class="btn btn-primary" onclick="check();">Färdig</button>
 				<!--Här är knappen som kommer aktivera javascript filen så man ser hur många poäng man har-->
-
-			</form>
-			<div id="after_submit">
+                <div id="after_submit">
 				<p id="sms"></p>
 				<p id="number_correct"></p>
 			</div>
+			</form>
+			
 
 		</section>
 		<section>
@@ -205,29 +206,111 @@
 
 
 
-		</section> 	
+		</section> 
+		<section>
 
+			<div class="statistik">
+        <div id="piechart"></div>
 
-		<div class="klass"><a href="https://www.youtube.com/results?search_query=fredrik+johansson+python" target="_blank"><button type="button" class="link">Lär dig mer om python</button></a></div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
+<script type="text/javascript">
+// Laddar googles charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Ritar charten och sätter värdem
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Antal', 'Deltagare'],
+  
+  ['Mentorer', 4],
+  ['Lärare', 2],
+  ['Deltagare', 120]
+]);
+
+  // Sätter titel och bredd på charten
+  var options = {'title':'Statistik för tjejhack 2018', 'width':600, 'height':600};
+
+  
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+			</div>
+		</section>
+		<section>
+		<div class="python">
+		<h2>Lär dig mer om python</h2></div>
+        <div class="youtubeklipp">
+
+        <div class="box"><iframe src="https://www.youtube.com/embed/iUpCT-oCu1U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="yt"></iframe></div> 
+		<div class="box"><iframe src="https://www.youtube.com/embed/SVBVvtTycFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="yt"></iframe></div> 
+		<div class="box"><iframe src="https://www.youtube.com/embed/26ciA4FmYfI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="yt"></iframe></div> 
+		
+		</div>
+           
+           <div class="youtubeklipp1">
+        <div class="box"><iframe width="560" height="315" src="https://www.youtube.com/embed/5Vz5x_4UMQU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="yt"></iframe></iframe></div> 
+		<div class="box"><iframe src="https://www.youtube.com/embed/C_aVB0jiLUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="yt"></iframe></div> 
+		<div class="box"><iframe src="https://www.youtube.com/embed/UMN9gHc05SQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="yt"></iframe></div> 
+		
+		</div>
+</section>	
+		<div class="pythonknapp"><a href="https://www.youtube.com/results?search_query=fredrik+johansson+python" target="_blank"><button type="button" class="danger">Länk till mer klipp</button></a></div>
 		<section> 
 			
 			<div class="nasta"></div>
-            <button class="btn-primary" onclick="datum();">Nästa tjejhack</button>
+            <button class="btn-primary" onclick="datum();"  id="besok">Nästa tjejhack</button>
 
 
 
 		</section>
-		<section>
-			<div class="info">
-               <h2>Information</h2>
-                <p><!--Så länge tills jag har fått allmän info--></p> 
+	
+	
+     <section>
+     	          
+                       
+                       
 
-			</div>
-		</section>
 
+                          <div class="karta">
+                           <iframe width="100%" height="400"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2219.3553092914703!2d15.272748089894913!3d56.20281903531045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4656647d084020a3%3A0xe929fb8182a0b18d!2sGymnasieskolan+Knut+Hahns!5e0!3m2!1sen!2sse!4v1545119903289" frameborder="0" allowfullscreen="" style="border:0"></iframe></div>
+                             
 
+     </section>
+     <section>
+     	<div class="mentorer">
+     		<div class="mentorer1">
+     			<img src="C:\Users\Alexander\OneDrive - Ronneby Kommun Skola\Webbutveckling\tjejhack\mentorer\frippe.jpg" class="bild">
+     			<p class="namn">Namn: Fredrik Johansson</p>
+     			
+     			</div>
+     			<div class="mentorer2">
+     			<img src="C:\Users\Alexander\OneDrive - Ronneby Kommun Skola\Webbutveckling\tjejhack\mentorer\liselott.jpg" class="bild">
+     			<p class="namn">Namn: Liselott Lilja</p>
+                
+     		</div>
+     	</div>
+     </section>
+
+        <section>
+        	<div class="utbildning">
+        		<a href="https://eduronneby-my.sharepoint.com/personal/ealeha02_edu_ronneby_se/_layouts/15/doc.aspx?sourcedoc={37f351d2-e4a4-439d-ba49-20bf42c511e8}&action=edit" target="_blank"><button type="button" class="danger">Ladda ner lite utbildningsmaterial</button></a>
+        	</div>
+        </section>
 
 	</main>
+	<footer>
+		
+		<div class="foot">
+			<div class="foot1">
+			<p class="copy">Copyright &#9400; 2019</p>
+			</div>
+			<div class="foot2"></div>
+			<div class="foot3"></div>
+			<div class="foot4"></div>
+		</div>
+	</footer>
 </body>
 </html>
