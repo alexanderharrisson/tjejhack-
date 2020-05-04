@@ -36,5 +36,5 @@ if (fråga3 == "text") {
  
 }
 function datum(){
-	alert("Datum för nästa tjejhack");
+	alert("Nästa tjejhack är den 18 oktober 2020");
 }

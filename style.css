@@ -1,9 +1,7 @@
 body{
 font-family: 'Roboto', sans-serif;
 overflow-x: hidden;
- 
-  background-repeat: repeat-x;
-  background-size: cover;
+
 }
 *{
 	margin: 0;
@@ -222,14 +220,23 @@ h1:hover{
   margin-top: 25%; 
   margin-left: 5%;
   margin-right: 5%;
-  
- 
+}
+
+.fraga{
+  margin-top: 3px;
+} 
+.fraga:hover{
+  color: #E80C94;
+}
 
  
 }
 .rubrik2{
 text-align: center;
 padding-top: 0.5%;
+}
+.rubrik2:hover{
+  color: #E80C94;
 }
 .quizet{
   padding-left: 2%;
@@ -253,10 +260,14 @@ padding-top: 0.5%;
   height: auto;
   width: auto;
  
- padding-right: 5px;
-   margin-left: 5%;
+ padding-right: 2px;
+   margin-left: 7%;
   margin-right: 5%;
   margin-top: 20%;
+   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
 
 }
 .utvärdering2{
@@ -381,14 +392,42 @@ body {font-family: Verdana, sans-serif;}
  }
 
 
-.karta{
+.besok{
+  box-shadow: 0 1px 50px grey;
+  border-radius: 20px;
   width: auto;
+  height: auto;
+  
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 10%;
-  display: flex;
+   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
  
  
+}
+.karta{
+  flex:1;
+  height: 100%;
+  padding-left: 5px;
+  padding-left: 5px;
+  
+}
+.kontakt{
+
+  flex: 1;
+padding-left: 10px;
+padding-right: 10px;
+}
+.besokrubrik{
+  text-align: center;
+}
+.besoktext{
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 15px;
 }
 .mentorer{
 
@@ -414,50 +453,30 @@ margin-right: 5%;
   margin-right: 5%;
 
 }
-
-.yt{
-  width: 100%;
-  height: 100%;
+.kodasjalvtext{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.youtubeklipp{
+.larasig{
+  box-shadow: 0 1px 50px grey;
+  border-radius: 20px;
   width: auto;
   height: auto;
-  border-radius: 20px;
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 15%;
+  margin-bottom: 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-flow: wrap;
 }
-.youtubeklipp1{
-  width: auto;
-  height: auto;
- 
-  border-radius: 20px;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-flow: wrap;
-}
-.python{
-  width: auto;
-  margin-bottom: 5%;
-  margin-top: 13%;
+.rubriklarasig{
   text-align: center;
 }
-.python:hover{
-  color: #E80C94;
-}
-.pythonknapp{
-  margin-left: 40%;
-  margin-right: 10%;
-  margin-top: 5%;
-  width: auto;
-}
+
 .danger{
   padding-left: 15px;
   padding-right: 15px;
@@ -465,22 +484,20 @@ margin-right: 5%;
   padding-top: 15px; 
   font-size: 20px; 
 }
-.danger:hover{
-  background-color: red;
-}
+
 .utvärdering1:hover{
   color: #E80C94;
 }
 .utbildning{
   margin-left: 30%;
   margin-right: 10%;
-  margin-top: 5%;
+  margin-top: 20%;
   width: auto;
 }
 .foot{
   background-color: green;
   width: 100%;
-  height: 80px;
+  height: 100px;
   margin-bottom: 0%;
   margin-top: 5%;
    display: flex;
@@ -493,11 +510,7 @@ margin-right: 5%;
   height: 100%;
   
 }
-.copy{
-  text-align: center;
-  width: auto;
-  padding-top: 10px;
-}
+
 .foot2{
   width: 25%;
   height: 100%;
@@ -523,4 +536,9 @@ margin-right: 5%;
   flex-direction: row;
   justify-content: space-around;
   flex-flow: wrap;
+}
+.socialamedier{
+height: 80px;
+padding-left: 20px;
+padding-top: 10px;
 }
