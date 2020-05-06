@@ -43,9 +43,9 @@
 									<button class="dropbtn">Meny
 										<i class="fa fa-caret-down"></i>
 									</button>
-									<div class="dropdown-content">
+									<div class="dropdown-content"> <!--Drop down meny-->
 										<a href="#tjejhack">Hem</a>
-										<a href="#quiz">Quiz</a>
+										<a href="#quiz">Quiz</a><!--Här länkas det till den del av hemsidan där man skrivit id="quiz"-->
 										<a href="#utvärdering">Utvärdering</a>
 										<a href="#besok">Besök</a>
 									</div>
@@ -93,10 +93,11 @@
 
 	</section>
 		<section>
-			<div class="bildgalleri1">
 			
-		<div class="box"><img src="" class="bild"></div>
-		<div class="box"><img src="" class="bild"></div> <!--Här kan man lägga upp bilder på tjejhack-->
+			<div class="bildgalleri1"> <!--Här kan man lägga upp bilder på tjejhack-->
+			
+		<div class="box"><img src="" class="bild"></div><!--Samma ända ner-->
+		<div class="box"><img src="" class="bild"></div> 
 		<div class="box"><img src="" class="bild"></div> 
 		<div class="box"><img src="" class="bild"></div> 
 		<div class="box"><img src="" class="bild"></div> 
@@ -131,7 +132,7 @@
 				?</p></div>
 
 
-				<input id="mc" type="radio" name="fråga1" value="ormen">Ormen<br> <!--Här är frågor till quizet. Det funkar så här typ att man skriver rätt value i javascript filen och om man gissar rött value så får man poäng-->
+				<input id="mc" type="radio" name="fråga1" value="ormen">Ormen<br> <!--Här finns det frågor till quizet, man får rätt genom att value på knappen man trycker på stämmer överens med värdet som är satt i javascript-->
 				<input id="mc" type="radio" name="fråga1" value="python" >Monthy python<br>
 				<input id="mc" type="radio" name="fråga1" value="lukten" >Lukten<br>
 
@@ -160,8 +161,8 @@
 
 
 				<br>
-				<button id="button" type="button" class="btn btn-primary" onclick="check();">Färdig</button>
-				<!--Här är knappen som kommer aktivera javascript filen så man ser hur många poäng man har-->
+				<button id="button" type="button" class="btn btn-primary" onclick="check();">Färdig</button><!--Här hämtar man hur många rätt man fick, när man klickar på knappen så hämtar man funktionen av  javascript-->
+			
                 <div id="after_submit">
 				<p id="sms"></p>
 				<p id="number_correct"></p>
@@ -188,7 +189,7 @@
 
 
 
-		<section class="rightside">
+		<section class="rightside"><!--Här finns kommentarer från tidigare deltagare av tjejhack-->
 
 			<h3 class="utvärdering1">Kommentarer:</h3>
 			<div class="comments"><p>det va kul</p></div>
@@ -223,9 +224,9 @@ function drawChart() {
   var data = google.visualization.arrayToDataTable([
   ['Antal', 'Deltagare'],
   
-  ['Mentorer', 4],
-  ['Lärare', 2],
-  ['Deltagare', 120]
+  ['Mentorer', 4],//Här bestämmer mn hur stor andel av cirkeln som ska vara mentorer
+  ['Lärare', 2], //Här bestämmer mn hur stor andel av cirkeln som ska vara lärare
+  ['Deltagare', 120] //Här bestämmer mn hur stor andel av cirkeln som ska vara deltagare
 ]);
 
   // Sätter titel och bredd på charten
@@ -253,7 +254,7 @@ function drawChart() {
 		<section> 
 			
 			<div class="nasta">
-            <button class="btn-primary" onclick="datum();"  id="besok">Nästa tjejhack</button></div>
+            <button class="btn-primary" onclick="datum();"  id="besok">Nästa tjejhack</button></div><!--Här Får man info om när nästa tjejhack är, det funkar så att funktionens namn skrivs i onlick. Detta länkar till javascript funktionen-->
 
 
 
@@ -269,7 +270,7 @@ function drawChart() {
                <a href="https://www.ronneby.se/sidowebbplatser/gymnasieskolan-knut-hahn/studiebesok/teknikprogrammet.html" target="_blank"><button type="button" class="btn-primary">Kontakt</button></a>
      		</div>
                           <div class="karta">
-                           <iframe height="400" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2219.3553092914703!2d15.272748089894913!3d56.20281903531045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4656647d084020a3%3A0xe929fb8182a0b18d!2sGymnasieskolan+Knut+Hahns!5e0!3m2!1sen!2sse!4v1545119903289" frameborder="0" allowfullscreen="" style="border:0"></iframe></div>
+                           <iframe height="400" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2219.3553092914703!2d15.272748089894913!3d56.20281903531045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4656647d084020a3%3A0xe929fb8182a0b18d!2sGymnasieskolan+Knut+Hahns!5e0!3m2!1sen!2sse!4v1545119903289" frameborder="0" allowfullscreen="" style="border:0"></iframe></div><!--Google karta som ger info om vart knut hahn ligger-->
                              </div>
      </section>
 
@@ -290,7 +291,8 @@ function drawChart() {
 
         <section>
         	<div class="utbildning">
-        		<a href="https://eduronneby-my.sharepoint.com/personal/ealeha02_edu_ronneby_se/_layouts/15/doc.aspx?sourcedoc={37f351d2-e4a4-439d-ba49-20bf42c511e8}&action=edit" target="_blank"><button type="button" class="danger">Ladda ner lite utbildningsmaterial</button></a>
+        		
+        		<a href="https://eduronneby-my.sharepoint.com/personal/ealeha02_edu_ronneby_se/_layouts/15/doc.aspx?sourcedoc={37f351d2-e4a4-439d-ba49-20bf42c511e8}&action=edit" target="_blank"><button type="button" class="danger">material</button></a>
         	</div>
         </section>
 
@@ -299,13 +301,13 @@ function drawChart() {
 		
 		<div class="foot">
 			<div class="foot1">
-			<a href="https://www.facebook.com/teknist/" target="_blank"><img src="C:\Users\Alexander\OneDrive - Ronneby Kommun Skola\Webbutveckling\tjejhack\bilder\facebook.webp" class="socialamedier"></a><!--Här ska det länkas till facebook när jag får ev länk-->
+			<a href="https://www.facebook.com/teknist/" target="_blank"><img src="C:\Users\Alexander\OneDrive - Ronneby Kommun Skola\Webbutveckling\tjejhack\bilder\facebook.webp" class="socialamedier"></a><!--Här länkas det till teknikprogrammets facebook-->
 			</div>
 			<div class="foot2">
-				<a href="https://www.instagram.com/" target="_blank"><img src="C:\Users\Alexander\OneDrive - Ronneby Kommun Skola\Webbutveckling\tjejhack\bilder\instagram.webp" class="socialamedier"></a><!--Här ska det länkas till instagram när jag får ev länk-->
+				<a href="https://www.instagram.com/teknikprogrammet/" target="_blank"><img src="C:\Users\Alexander\OneDrive - Ronneby Kommun Skola\Webbutveckling\tjejhack\bilder\instagram.webp" class="socialamedier"></a><!--Här länkas det till teknikprogrammets instagram-->
 			</div>
 			<div class="foot3">
-				<a href="https://twitter.com/" target="_blank"><img src="C:\Users\Alexander\OneDrive - Ronneby Kommun Skola\Webbutveckling\tjejhack\bilder\twitter.webp" class="socialamedier"></a><!--Här ska det länkas till twitter när jag fått länken-->
+				<a href="https://twitter.com/Teknikprogramm1?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3ATeknikprogramm1&ref_url=http%3A%2F%2Fteknist.se%2F" target="_blank"><img src="C:\Users\Alexander\OneDrive - Ronneby Kommun Skola\Webbutveckling\tjejhack\bilder\twitter.webp" class="socialamedier"></a><!--Här länkas det till teknikprogrammmets twitter-->
 			</div>
 			<div class="foot4"></div>
 		</div>

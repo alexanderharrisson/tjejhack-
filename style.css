@@ -181,7 +181,7 @@ h1:hover{
   height: auto;
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 15%;
+  margin-top: 25%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -334,7 +334,7 @@ body {font-family: Verdana, sans-serif;}
   width: auto;
   height: auto;
   margin-top: 10%;
-  margin-left: 5%;
+  margin-left: 7%;
   margin-right: 5%;
 
 }
@@ -393,8 +393,7 @@ body {font-family: Verdana, sans-serif;}
 
 
 .besok{
-  box-shadow: 0 1px 50px grey;
-  border-radius: 20px;
+
   width: auto;
   height: auto;
   
@@ -460,8 +459,6 @@ margin-right: 5%;
   padding-bottom: 30px;
 }
 .larasig{
-  box-shadow: 0 1px 50px grey;
-  border-radius: 20px;
   width: auto;
   height: auto;
   margin-left: 10%;
@@ -480,20 +477,22 @@ margin-right: 5%;
 .danger{
   padding-left: 15px;
   padding-right: 15px;
+  background-color: indianred;
+  margin-left: 20%;
+  border-radius: 8px;
   padding-bottom: 10px;
   padding-top: 15px; 
   font-size: 20px; 
 }
 
-.utvärdering1:hover{
-  color: #E80C94;
-}
+
 .utbildning{
   margin-left: 30%;
   margin-right: 10%;
   margin-top: 20%;
   width: auto;
 }
+
 .foot{
   background-color: green;
   width: 100%;
